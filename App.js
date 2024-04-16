@@ -1,18 +1,16 @@
-// App.js
-
+import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import * as React from 'react';
-import 'react-native-gesture-handler';
-import SegundaTela from './src/telas/SegundaTela'; // Caminho atualizado para SegundaTela
-import TelaInicial from './src/telas/TelaInicial'; // Caminho atualizado para TelaInicial
+import TelaInicial from './src/telas/TelaInicial';
+import SegundaTela from './src/telas2/SegundaTela';
+
 
 const Stack = createStackNavigator();
 
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator initialRouteName="TelaInicial">
         <Stack.Screen name="TelaInicial" component={TelaInicial} />
         <Stack.Screen name="SegundaTela" component={SegundaTela} />
       </Stack.Navigator>
