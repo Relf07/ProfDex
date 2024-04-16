@@ -12,7 +12,7 @@ const TelaInicial = ({ navigation }) => {
       style={styles.background}
     >
       <View style={styles.container}>
-        <Button title="Ir para outra tela" onPress={irParaOutraTela} />
+        <Button title="Start" onPress={irParaOutraTela} />
       </View>
     </ImageBackground>
   );
